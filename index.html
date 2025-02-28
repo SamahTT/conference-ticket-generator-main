@@ -1,57 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Conference ticket generator</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Form starts -->
+  <div class="container">
+    <div class="logo">
+      <img src="./assets/images/logo-full.svg" alt="Coding Conf Logo">
+    </div>
+    <section class="part-one">
+      <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
 
-  Your Journey to Coding Conf 2025 Starts Here!
+      <h2>Secure your spot at next year's biggest coding conference.</h2>
+    </section>
+    <section class="part-two">
+      <form action="">
 
-  Secure your spot at next year's biggest coding conference.
+        <div class="form-item">
+          <label for="avatar">Upload Avatar</label>
+          <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"
+            placeholder="Drag and drop or click to upload" required>
+          <p class="small-text">Upload your photo (JPG or PNG, max size: 500KB).</p>
+        </div>
 
-  Upload Avatar
-  Drag and drop or click to upload
-  Upload your photo (JPG or PNG, max size: 500KB).
+        <div class="form-item">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="" required>
+        </div>
 
-  Full Name
+        <div class="form-item">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        </div>
 
-  Email Address
-  example@email.com
+        <div class="form-item">
+          <label for="">GitHub Username</label>
+        <input type="text" id="github" name="github" placeholder="@yourusername" required>
+        </div> 
 
-  GitHub Username
-  @yourusername
+        <button type="submit">Generate My Ticket</button>
+      </form>
+    </section>
+  </div>
+</body>
 
-  Generate My Ticket
+</html>
 
-  <!-- Form ends -->
 
-  <!-- Generated tickets starts -->
+<!-- Generated tickets starts -->
 
-  Congrats, <!-- Full Name -->! Your ticket is ready.
+<div style="display: none;">
+  <h1>Congrats, <!-- Full Name -->! Your ticket is ready.</h1>
 
-  We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
+  <p>We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.</p>
 
   Coding Conf
   Jan 31, 2025 / Austin, TX
 
-  <!-- Generated tickets ends -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-</html>
+  <img src="./assets/images/avatar.jpg" alt="Avatar">
+  <h3>Full Name</h3>
+  <p>@GitHubUsername</p>
+</div>
+
+<!-- Generated tickets ends -->
