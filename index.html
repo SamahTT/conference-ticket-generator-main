@@ -16,23 +16,31 @@
 <body>
 
   <div class="container">
-    <div class="logo">
-      <img src="./assets/images/logo-full.svg" alt="Coding Conf Logo">
-    </div>
+
+    <img src="./assets/images/logo-full.svg" alt="Coding Conf Logo" class="logo">
+
     <section class="part-one">
       <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
-
       <h2>Secure your spot at next year's biggest coding conference.</h2>
     </section>
     <section class="part-two">
       <form action="">
 
         <div class="form-item">
-          <label for="avatar">Upload Avatar</label>
-          <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"
-            placeholder="Drag and drop or click to upload" required>
+          <label for="avatar" class="custom-input">
+            Upload Avatar
+            <button class="custom-input-btn">
+              <img src="assets/images/icon-upload.svg" alt="Upload Icon">
+            </button>
+            Drag and drop or click to upload
+          </label>
+          <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" placeholder="" required>
           <p class="small-text">Upload your photo (JPG or PNG, max size: 500KB).</p>
         </div>
+
+        <!-- Drag and drop or click to upload -->
+
+
 
         <div class="form-item">
           <label for="full-name">Full Name</label>
@@ -46,10 +54,10 @@
 
         <div class="form-item">
           <label for="">GitHub Username</label>
-        <input type="text" id="github" name="github" placeholder="@yourusername" required>
-        </div> 
+          <input type="text" id="github" name="github" placeholder="@yourusername" required>
+        </div>
 
-        <button type="submit">Generate My Ticket</button>
+        <button type="submit" class="submit-btn">Generate My Ticket</button>
       </form>
     </section>
   </div>

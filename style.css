@@ -28,14 +28,13 @@ body{
 }
 
 .logo{
-    padding: 0;
+    width: 150px;
+    outline: 1px solid;
     margin-bottom: 20px;
 }
 
-.logo img{
-    width: 150px;
-    height: 150px;
-    outline: 1px solid;
+.form-item{
+    margin-bottom: 20px;
 }
 
 
@@ -49,6 +48,44 @@ input{
 }
 
 
-#avatar{
+.custom-input {
+    border-radius: 15px;
+    padding: 10px 20px;
+    outline: none;
+    background-color: var(--Neutral-700);
     border-style: dashed;
+}
+
+.custom-input-btn{
+    background-color: var(--Neutral-700);
+    outline: 0;
+    border: solid var(--Neutral-0) 1px;
+    border-radius: 15px;
+    padding: 8px 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#avatar {
+    display: none;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.submit-btn{
+    padding: 10px 20px;
+    background-color: var(--Orange-500);
+    border: none;
+    border-radius: 15px;
+    color: var(--Neutral-700);
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 700;
 }
